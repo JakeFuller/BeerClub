@@ -8,6 +8,9 @@
   "description": "Simple beer club itinerary that pulls beer data from MongoDB.",
   "version": "1.0.0",
   "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node server.js",
     "devStart": "nodemon server.js"

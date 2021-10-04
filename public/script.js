@@ -9,7 +9,7 @@
  * Log Errors.
  */
 
-fetch("http://localhost:3000/beers", {
+fetch("/beers", {
   credientials: "omit",
 })
   .then(function (response) {

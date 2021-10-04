@@ -7,7 +7,7 @@
   "name": "Beer Club App",
   "description": "Simple beer club itinerary that pulls beer data from MongoDB.",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
     "devStart": "nodemon server.js"

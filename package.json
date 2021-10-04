@@ -4,7 +4,7 @@
     "mongodb": "^4.1.2",
     "mongoose": "^6.0.8"
   },
-  "name": "Beer Club App",
+  "name": "Beer-Club-App",
   "description": "Simple beer club itinerary that pulls beer data from MongoDB.",
   "version": "1.0.0",
   "main": "server.js",

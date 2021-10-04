@@ -6,7 +6,7 @@ const router = express.Router();
 const Beer = require("../models/beer");
 
 //Get All Beers
-router.get("/", async (req, res) => {
+router.get("/beers", async (req, res) => {
   try {
     const beers = await Beer.find();
     res.json(beers);

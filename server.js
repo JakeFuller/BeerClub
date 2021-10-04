@@ -24,7 +24,7 @@ db.once("open", () => console.log("Connected to Database"));
 
 //Route beers
 const beerRouter = require("./routes/beers");
-app.use("beers", beerRouter);
+app.use("/beers", beerRouter);
 
 //Start server
 app.listen(process.env.PORT || port, () => {

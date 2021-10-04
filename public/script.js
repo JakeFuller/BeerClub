@@ -9,7 +9,7 @@
  * Log Errors.
  */
 
-fetch("https://agile-wildwood-79803.herokuapp.com/", {
+fetch("/beers", {
   credientials: "omit",
 })
   .then(function (response) {

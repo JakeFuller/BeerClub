@@ -4,11 +4,12 @@
     "mongodb": "^4.1.2",
     "mongoose": "^6.0.8"
   },
-  "name": "beer-scraper",
-  "description": "Beer Scraper Version 1",
+  "name": "Beer Club App",
+  "description": "Simple beer club itinerary that pulls beer data from MongoDB.",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
+    "start": "node server.js",
     "devStart": "nodemon server.js"
   },
   "author": "Jake Fuller",

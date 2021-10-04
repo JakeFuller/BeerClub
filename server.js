@@ -7,6 +7,7 @@ require("dotenv").config();
 
 const express = require("express");
 const app = express();
+const port = 3000;
 app.use(express.json());
 
 //Set up the root path using route for index (index.html)
@@ -26,6 +27,6 @@ const beerRouter = require("./routes/beers");
 app.use("/beers", beerRouter);
 
 //Start server
-app.listen(process.env.PORT || 3000, () => {
-  console.log("Server running on port 3000");
+app.listen(process.env.PORT || port, () => {
+  console.log("Beer Club App listening at http://localhost:${port}");
 });

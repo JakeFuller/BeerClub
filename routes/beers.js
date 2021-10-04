@@ -6,12 +6,12 @@ const router = express.Router();
 const Beer = require("../models/beer");
 
 //Get All Beers
-router.get("/beers", async (req, res) => {
+router.get("/", async (req, res) => {
   try {
     const beers = await Beer.find();
     res.json(beers);
-  } catch (error) {
-    res.status(500).json({ message: error.message });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
 });
 

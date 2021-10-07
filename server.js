@@ -26,6 +26,10 @@ db.once("open", () => console.log("Connected to Database"));
 const beerRouter = require("./routes/beers");
 app.use("/beers", beerRouter);
 
+//Route Sets
+const setRouter = require("./routes/sets");
+app.use("/sets", setRouter);
+
 //Start server
 app.listen(process.env.PORT || port, () => {
   console.log("Beer Club App listening at http://localhost:${port}");

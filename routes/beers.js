@@ -16,5 +16,22 @@ router.get("/", async (req, res) => {
 });
 
 //Get One Beer
+router.get("/:id", getBeer, (req, res) => {
+  res.send(res.beer);
+});
+
+async function getBeer(req, res, next) {
+  let beer;
+  try {
+    beer = await Beer.findById(req.params.id);
+    if (beer == null) {
+      return res.status(404).json({ message: "Beer not found" });
+    }
+  } catch (error) {
+    return res.status(500).json({ message: error.message });
+  }
+  res.beer = beer;
+  next();
+}
 
 module.exports = router;

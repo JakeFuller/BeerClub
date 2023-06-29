@@ -1,1 +1,13 @@
 GET http://localhost:3000/beers
+
+###
+
+GET http://localhost:3000/beers/615c7fed703d17c8c8c12ab0
+
+###
+
+GET http://localhost:3000/sets
+
+###
+
+GET http://localhost:3000/sets/615f00e5b61b9498bcf5fac9
